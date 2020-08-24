@@ -1,0 +1,23 @@
+.board {
+  background: blue;
+  width: 800px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.board > .cell {
+  width: calc(800px / 7 - 8px);
+  height: calc(800px / 7 - 8px);
+  display: inline-block;
+  background: white;
+  border-radius: 50%;
+  margin: 4px;
+}
+
+.board > .cell[data-player="playerOne"] {
+  background: yellow;
+}
+
+.board > .cell[data-player="playerTwo"] {
+  background: red;
+}
